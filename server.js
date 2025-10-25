@@ -7,3 +7,7 @@ app.use(express.json());
 app.get("/plants", (req, res) => {
   res.json({ status: "ok" });
 });
+
+app.listen(3000, () => {
+  console.log("Access on port 3000");
+});
